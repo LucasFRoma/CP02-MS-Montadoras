@@ -92,19 +92,17 @@ No profile `default`, todas as variáveis acima têm valores padrão (`localhost
 
 ## 📖 Documentação da API (Swagger/OpenAPI)
 
-Com a aplicação rodando no profile `default`, acesse:
+Disponível em **ambos os profiles** (`default` e `prd`):
 
 - Swagger UI: `http://localhost:8080/`
 - OpenAPI JSON: `http://localhost:8080/v3/api-docs`
-
-> No profile `prd`, o Swagger UI fica **desabilitado** por padrão (`springdoc.swagger-ui.enabled=false`), como boa prática de segurança em produção. Para inspecionar a API publicada, rode a imagem localmente no profile `default`.
 
 ## ⚙️ Profiles de execução
 
 | Profile | Uso | `ddl-auto` | Swagger |
 |---|---|---|---|
 | `default` | Desenvolvimento local | `update` (cria/atualiza tabelas automaticamente) | Habilitado |
-| `prd` | Produção | `validate` (**não** cria banco/tabelas automaticamente) | Desabilitado |
+| `prd` | Produção | `validate` (**não** cria banco/tabelas automaticamente) | Habilitado |
 
 ## 🗂️ Rodando localmente sem Docker (opcional)
 
