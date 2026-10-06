@@ -175,8 +175,8 @@ curl -X POST http://localhost:8080/modelos \
 
 ## 🗂️ Estrutura das entidades
 
-- **Montadora** (tabela `empresas`): `id`, `nome`, `pais`, `ramo`, `sede`
-- **Modelo** (tabela `jogos`): `id`, `nome`, `franquia`, `classificacao`, `fabricante`
+- **Montadora** (tabela `montadora`): `id`, `nome`, `pais`, `ramo`, `sede`
+- **Modelo** (tabela `modelo`): `id`, `nome`, `franquia`, `classificacao`, `fabricante`
 
 ## 📁 Organização do projeto
 
